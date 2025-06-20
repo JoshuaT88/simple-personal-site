@@ -20,7 +20,15 @@ margin: 0;
     min-height: 100vh;
 }
   
-
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 5vw 1rem 5vw;
+}
+nav li {
+    list-style: none;
+}
 .container {
     
     padding: 20px;
@@ -30,10 +38,7 @@ margin: 0;
 text-align: center;
 
 }
-/* Remove list styles */
 
-
-/* Remove link underlines and inherit color */
 a {
   text-decoration: none;
   color: inherit;
