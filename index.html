@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intiial-scale=1.0">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Joshua Tiller | Simple Personal Website WK1</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -15,45 +15,67 @@
             <a href="https://github.com/JoshuaT88" target="_blank" aria-label="GitHub">
                 <i class="fab fa-github"></i>
             </a>
+            <a href="mailto:jatiller88@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            
+                        </a>
         
         </div>
             <nav class="navbar">
                 <ul class="nav-links">
-                <li><a href="#intro">Introdction</a></li>
+                <li><a href="#intro">Introduction</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">My Projects</a></li>
                 </ul>
             </nav>
         
         <main class="container">
-            <h1>Take A Simple Look At Me</h1>
-            <p>a brief look into who I am...</p>
-            <section id="intro">
-                <h2>Introduction</h2>
+            <div class="main-title">
+                <h1>Take A Simple Look At Me</h1>
+            
+            </div>
+            <div class="introduction">
+                
+            
+            <div class="intro" id="intro-info">
+                <h3>Introduction</h3>
                 <p>This is a brief look into who I am as a Jr Dev.</p>
                 <p>My goal is to take a 12 week journey to hone in my development skills and become a valuable dev asset.</p>
-            </section>
+            </div>
+            </div>
+            
+            <section class="about-slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
 
-            <section id="about">
-                <h2>About Me</h2>
-                <ul>
-                    <li>
-                        <strong>Name: </strong>
-                        <p>Joshua A Tiller</p>
-                    </li>
-                    <li>
-                        <strong>Age: </strong>
-                        <p>I am 24 years old</p>
-                    </li>
-                    <li>
-                        <strong>Location/Where I am from: </strong>
-                        <p>Knoxville, TN</p>
-                    </li>
-                </ul>
-            </section>
+                <div class="slides">
+                    <div class="slide" id="s1">
+                        <h3>Who I Am</h3>
+                        <p>My name is Joshua Tiller. I am 24 years old and I am located out of Knoxville TN. I am a Jr Frontend dev who is impressed by and driven for UI perfection.</p>
+                    </div>
 
+                    <div class="slide" id="s2">
+                        <h3>What I Do</h3>
+                        <p>Right now I build basic websites, but this is out of the purpose of 
+                            learning deeper fundamentals of web development.
+                        </p>
+                    </div>
+
+                    <div class="slide" id="s3">
+                        <h3>Fun Fact</h3>
+                        <p>I started coding back in 2022 while going to school at Roane State Community College. </p>
+                    </div>
+                </div>
+                <div class="nav">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+
+            </section>
             <section class="card-section" id="projects">
-                <h2>My Projects</h2>
+                <h3>My Projects</h3>
                 <div class="project-grid">
                     <div class="project-card">
                         <a href="https://www.customcutmetalscorp.com" target="_blank">
@@ -72,17 +94,7 @@
                 
             </section>
 
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <ul>
-                    <li>
-                        <a href="mailto:jatiller88@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                            Email
-                        </a>
-                    </li>
-                </ul>
-            </section>
+            
         </main>
     </body>
 </html>
