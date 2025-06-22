@@ -164,6 +164,29 @@ text-align: center;
   align-items: center;
 }
 
+.preview-image {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* smaller width */
+  max-height: 120px; /* control height */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+.preview-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
 .project-card {
   background-color: #fff;
   border: 1px solid #e0e0e0;
@@ -172,11 +195,16 @@ text-align: center;
   text-align: center;
   transition: transform 0.2s ease;
   width: 100%;
+  position:relative;
 }
 
-
+.project-card:hover .preview-image {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.05);
+}
 .project-card:hover {
     transform: scale(1.03);
+    
 }
 
 .project-card a {
